@@ -1,11 +1,11 @@
 function plotSchedule(ScheduleDB, separate_figures)
 % Prints the processors schedule graph and the DAG graph
 %
-% separate_figures - boolean - if true, plot the result in the same figure,
-%                              if false, plot the result in separate figures
+% separate_figures - boolean - if true, plot the result in separate figures,
+%                              if false, plot the result in the same figure
 
 if nargin == 1
-    separate_figures = 1;
+    separate_figures = true;
 end
 
 processors = ScheduleDB.Processors;
